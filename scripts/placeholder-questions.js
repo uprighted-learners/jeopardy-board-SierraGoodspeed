@@ -1,5 +1,12 @@
 // Do not change this code
 
+
+const game = document.getElementById('game')
+const scoreDisplay = document.getElementById('score')
+
+
+
+
 const placeholderQuestions = [
   {
     category: "Nature",
@@ -325,5 +332,6 @@ const placeholderQuestions = [
     answer: "Burlington Code Academy",
   },
 ];
+
 
 export default placeholderQuestions;

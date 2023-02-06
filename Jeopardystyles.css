@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(46,46,46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family:'Anton',sans-serif ;
+
+}
+
+h1 {
+    color: aliceblue;
+}
+h2 {
+    color: aliceblue;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+table {
+    text-align: center;
+    color: white;
+    background-color: rgb(26, 26, 255);
+    border: 10px solid rgb(32,32,32) ;
+    border-left: solid rgb(19,19,160) 10px;
+    border-right: solid rgb(11,11,91) 10px; 
+    border-top:solid rgb(1,61,200) 10px ;
+    border-bottom:solid rgb(20,20,89) 10px;
+    border-radius: 25px;
+}
+
+td {
+    
+    width: 600px;
+    border: 5px solid palevioletred;
+}
+
+#Question:hover {
+    background-color:orange;
+    transition: .5s;
+}
+
+footer{
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: lightpink;
+    transition: 0.1ms;
+}
