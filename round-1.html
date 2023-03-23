@@ -4,75 +4,106 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Projects/jeopardy-board-SierraGoodspeed/Jeopardystyles.css">
+    <link rel="stylesheet" href="./Jeopardystyles.css">
     <title>Jeopardy pg 1</title>
   </head>
   <body>
-    <h1>Round One</h1>
-    <table align="center" border="1" width="600" height="450">
-      <h2>Player Turn:</h2>
-      <tr>
-          <td>Nature</td>
-          <td>Animals</td>
-          <td>Computers</td>
-          <td>Mythology</td>
-          <td>History</td>
-          <td>General</td>
-      </tr>
-      <tr>
-          <td id="Question">$200</td>
-          <td id="Question">$200</td>
-          <td id="Question">$200</td>
-          <td id="Question">$200</td>
-          <td id="Question">$200</td>
-          <td id="Question">$200</td>
-      </tr>
-      <tr>
-          <td id="Question">$400</td>
-          <td id="Question">$400</td>
-          <td id="Question">$400</td>
-          <td id="Question">$400</td>
-          <td id="Question">$400</td>
-          <td id="Question">$400</td>
-      </tr>
-      <tr>
-          <td id="Question">$600</td>
-          <td id="Question">$600</td>
-          <td id="Question">$600</td>
-          <td id="Question">$600</td>
-          <td id="Question">$600</td>
-          <td id="Question">$600</td>
-      </tr>
-      <tr>
-          <td id="Question">$800</td>
-          <td id="Question">$800</td>
-          <td id="Question">$800</td>
-          <td id="Question">$800</td>
-          <td id="Question">$800</td>
-          <td id="Question">$800</td>
-      </tr>
-      <tr>
-          <td id="Question">$1000</td>
-          <td id="Question">$1000</td>
-          <td id="Question">$1000</td>
-          <td id="Question">$1000</td>
-          <td id="Question">$1000</td>
-          <td id="Question">$1000</td>
-      </tr>
-  </table>
+        <!-- find a way to store everything in divs give everything classes and data values -->
+
+<!-- revamp the structure and format try to maintain styling if possible -->
 
 
-    <h3>Player 1 Score: 0</h3>
-    <h3>Player 2 Score: 0</h3>
-    <input type="answer">
+<!-- 
+    display grid
+
+    grid temp rows rep
+    grid temp col, rep
+ -->
+
+<div class="prev-btn"><a href="./index.html"><button style="height: 50px; width: 100px;">Home</button></a></div>
+
+ <div class="header"><h1>Round One!</h1></div>
+
+<div class="player-turn"><h2 id="player-turn">Player Turn:</h2></div>
+
+
+ <!-- 2ENT -->
+
+    <div class="jeopardy-board">
+        <div class="category" id=" Nature">
+          <div class="category-title" id="Nature">Nature</div>
+          <div class="question" data-value="200">$200</div>
+          <div class="question" data-value="400">$400</div>
+          <div class="question" data-value="600">$600</div>
+          <div class="question" data-value="800">$800</div>
+          <div class="question" data-value="1000">$1000</div>
+        </div>
+        <div class="category" id="Animals">
+          <div class="category-title">Animals</div>
+          <div class="question" data-value="200">$200</div>
+          <div class="question" data-value="400">$400</div>
+          <div class="question" data-value="600">$600</div>
+          <div class="question" data-value="800">$800</div>
+          <div class="question" data-value="1000">$1000</div>
+        </div>
+        <div class="category" id="Computers">
+          <div class="category-title">Computers</div>
+          <div class="question" data-value="200">$200</div>
+          <div class="question" data-value="400">$400</div>
+          <div class="question" data-value="600">$600</div>
+          <div class="question" data-value="800">$800</div>
+          <div class="question" data-value="1000">$1000</div>
+        </div>
+        <div class="category" id="Mythology">
+          <div class="category-title">Mythology</div>
+          <div class="question" data-value="200">$200</div>
+          <div class="question" data-value="400">$400</div>
+          <div class="question" data-value="600">$600</div>
+          <div class="question" data-value="800">$800</div>
+          <div class="question" data-value="1000">$1000</div>
+        </div>
+        <div class="category" id="History">
+          <div class="category-title">History</div>
+          <div class="question" data-value="200">$200</div>
+          <div class="question" data-value="400">$400</div>
+          <div class="question" data-value="600">$600</div>
+          <div class="question" data-value="800">$800</div>
+          <div class="question" data-value="1000">$1000</div>
+        </div>
+        <div class="category" id="General">
+          <div class="category-title">General</div>
+          <div class="question" data-value="200">$200</div>
+          <div class="question" data-value="400">$400</div>
+          <div class="question" data-value="600">$600</div>
+          <div class="question" data-value="800">$800</div>
+          <div class="question" data-value="1000">$1000</div>
+        </div>
+                
+      
+      </div>
+      
+      
+      <div class="container">
+        <div class="player-One"><h3 id="p1">Player 1 Score: 0</h3></div>
+      <div class="player-Two"><h4 id="p2">Player 2 Score: 0</h4></div>
+      </div>
     
-    <button>Guess</button>
-    <button>Pass</button>
     
-    <a href="/Projects/jeopardy-board-SierraGoodspeed/round-2.html">
-    <button>Next Round!</button></a>
-`
-<footer>JEOPARDY yo! © 2023</footer>
+    <div class="btn-container">
+    <div class="Guess"><button id="guess" style="height: 50px
+    ;width: 200px; border: 5px solid lightgreen;">Guess!</button></div>
+    <div class="Pass"><button  id="pass"  style="height: 50px
+    ; width: 200px; border: 5px solid tomato;">Pass!</button></div>
+</div>
+    <a href="./round-2.html"><div class="next-round"><button style="height: 50px; width: 200px; border: 5px solid orange;">Next Round!</button></div></a>
+
+
+
+    <div class="input-container"><input type="answer" placeholder="Type your answer here..."></div>
+    
+
+
+<div class="footer-container"><footer>JEOPARDY yo! © 2023</footer></div>
     <script src="./scripts/index.js" type="module"></script>
   </body>
 </html>
