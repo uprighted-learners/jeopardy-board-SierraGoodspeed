@@ -1,5 +1,20 @@
 // Do not change this code
 
+
+
+
+
+/* 
+Ahhh, you (the class, not just you specifically) have it as a JS file, you are correct. That means that we can do one of two options: 
+
+Option 1: We can convert this file to json very easily and fetch from it as we did in class.
+
+Option 2: In the scripts folder, the index.js where our JS can go already imports the questions from the file via line two "import placeholderQuestions from "./placeholder-questions.js";" 
+             Which means, that we can access the file contents via calling placeholderQuestions like we would a variable and can grab the array of questions from it.
+*/
+
+
+
 const placeholderQuestions = [
   {
     category: "Nature",
@@ -326,4 +341,5 @@ const placeholderQuestions = [
   },
 ];
 
+// This exports the file contents so it can be imported into another file
 export default placeholderQuestions;

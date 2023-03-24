@@ -3,12 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <link rel="stylesheet" href="./Jeopardystyles.css">
     <title>Final Jeopardy</title>
   </head>
   <body>
-    <h1>Final Jeopardy</h1>
+
+    <div class="prev-btn"><a href="./round-2.html"><button style="height: 50px; width: 100px;">Round 2</button></a></div>
+    <div class="header"><h1>Final Jeopardy</h1></div>
     <!-- Do not change the script source. Allows import/export to work. -->
+    <div class="player-turn"><h2>Player Turn: </h2></div>
+    
+    <div class="jeopardy-board">
+      <div class="category">
+        <div class="category-title" style="height: 300px; width: 500px;">Final</div>
+        <div class="question" data-value="200" style="height: 300px; width: 500px;">Final Question</div>
+      
+        
+        
+        <div class="point-bet"><input type="Point bet amount" placeholder="Point bet amount"></div>
+        <div class="final-answer"><input type="Final Answer" placeholder="Final Answer"></div>
+       
+        <div class="btn-container"><button>Bet</button></div>
+       
     <script src="./scripts/index.js" type="module"></script>
+    <footer>JEOPARDY yo! © 2023</footer>
+  </div>
+  
   </body>
 </html>
